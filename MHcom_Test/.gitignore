@@ -1,0 +1,59 @@
+# STM32/Keil Compilation Output
+*.axf
+*.hex
+*.bin
+*.elf
+*.map
+*.lst
+*.out
+
+# Keil Build Files
+*.dep
+*.lnp
+*.sct
+*.build_log.htm
+*.htm
+*.uvguix.*
+*.uvoptx
+*.bak
+
+# Object Files
+*.o
+*.d
+*.crf
+*.obj
+*.i
+
+# Debug Configuration
+DebugConfig/
+*.dbgconf
+
+# System Temporary Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backup Files
+*~
+*.swp
+*.swo
+*.bak
+
+# Build Directories
+Objects/
+Listings/
+Output/
+Debug/
+Release/
+
+# STM32CubeMX Generated Files
+Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.c.bak
+
+# IDE Configuration
+.vs/
+.vscode/
+*.code-workspace
+
+# Log Files
+*.log
+*.txt

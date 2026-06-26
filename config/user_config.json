@@ -1,0 +1,75 @@
+{
+  "theme": "light",
+  "mode": "terminal",
+  "serial": {
+    "port": "COM3",
+    "baud": 115200,
+    "bytesize": 8,
+    "stopbits": 1,
+    "parity": "N",
+    "encoding": "utf-8",
+    "auto_send": false,
+    "auto_send_interval": 1000,
+    "show_timestamp": true,
+    "hex_display": false,
+    "auto_scroll": true
+  },
+  "macros": [
+    {
+      "name": "查询版本",
+      "data": "AT+VER?\r\n",
+      "encoding": "text"
+    },
+    {
+      "name": "获取状态",
+      "data": "AT+STAT?\r\n",
+      "encoding": "text"
+    },
+    {
+      "name": "重启设备",
+      "data": "AT+RST\r\n",
+      "encoding": "text"
+    }
+  ],
+  "waveform": {
+    "channels": [
+      {
+        "name": "CH1",
+        "color": "#3B82F6",
+        "offset": 0,
+        "scale": 1.0,
+        "visible": true
+      },
+      {
+        "name": "CH2",
+        "color": "#10B981",
+        "offset": 0,
+        "scale": 1.0,
+        "visible": true
+      },
+      {
+        "name": "CH3",
+        "color": "#F59E0B",
+        "offset": 0,
+        "scale": 1.0,
+        "visible": false
+      },
+      {
+        "name": "CH4",
+        "color": "#EF4444",
+        "offset": 0,
+        "scale": 1.0,
+        "visible": false
+      }
+    ],
+    "buffer_size": 1000,
+    "update_interval": 50
+  },
+  "modbus": {
+    "slave_id": 1,
+    "timeout": 1000,
+    "poll_interval": 500,
+    "start_address": 0,
+    "register_count": 10
+  }
+}

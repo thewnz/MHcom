@@ -1,46 +1,26 @@
 # Python
-*.pyc
 __pycache__/
+*.py[cod]
+*.so
 *.egg-info/
+dist/
+build/
 *.egg
-.pytest_cache/
-.coverage
-htmlcov/
 
-# Virtual environment
+# 虚拟环境
 .venv/
 venv/
 env/
-ENV/
-
-# PyInstaller
-build/
-dist/
-*.spec
-
-# Qt
-*.ui.cpython-*.py
-
-# Logs
-*.log
-crash_log.txt
-
-# Config
-user_config.json
-
-# OS
-.DS_Store
-Thumbs.db
-desktop.ini
 
 # IDE
-.vs/
 .vscode/
+.idea/
 *.swp
 *.swo
-*~
 
-# Build artifacts
-*.exe
-*.dll
-*.so
+# OS
+Thumbs.db
+.DS_Store
+
+# 日志
+*.log
